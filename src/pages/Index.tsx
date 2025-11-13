@@ -40,13 +40,15 @@ const Index = () => {
     }
   ];
 
-  const crops = [
-    { name: "Tomate", image: "🍅" },
-    { name: "Lechuga", image: "🥬" },
-    { name: "Zanahoria", image: "🥕" },
-    { name: "Papa", image: "🥔" },
-    { name: "Maíz", image: "🌽" },
-  ];
+const crops = [
+  { name: "Cacao", image: "🍫" },       // Representado por chocolate
+  { name: "Aguacate", image: "🥑" },    // Aguacate tiene emoji directo
+  { name: "Yuca", image: "🌱" },        // No hay emoji específico, se usa brote
+  { name: "Ñame", image: "🥔" },        // Similar a papa, se mantiene
+  { name: "Maíz", image: "🌽" },        // Emoji directo
+  { name: "Plátano", image: "🍌" }
+];
+
 
   const directiva = [
     { cargo: "Presidente", nombre: "Juan Pérez" },
