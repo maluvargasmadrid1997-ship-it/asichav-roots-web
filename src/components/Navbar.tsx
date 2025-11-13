@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
-import { Menu } from "lucide-react";
+import { Menu, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import logo from "@/assets/asichav-logo.png";
 
 const Navbar = () => {
   const menuItems = [
@@ -15,6 +16,7 @@ const Navbar = () => {
     { name: "Organigrama", path: "/organigrama" },
     { name: "Proyectos", path: "/proyectos" },
     { name: "Servicios", path: "/servicios" },
+    { name: "Productos", path: "/productos" },
     { name: "Galería", path: "/galeria" },
     { name: "Videos", path: "/videos" },
     { name: "Blog", path: "/blog" },
@@ -25,12 +27,13 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-primary text-primary-foreground shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-2xl font-bold">
-            ASICHAV
+          <Link to="/" className="flex items-center gap-3">
+            <img src={logo} alt="ASICHAV Logo" className="h-12 w-12 object-contain" />
+            <span className="text-2xl font-bold">ASICHAV</span>
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex space-x-6">
+          <div className="hidden lg:flex items-center space-x-6">
             {menuItems.map((item) => (
               <Link
                 key={item.path}
@@ -40,6 +43,11 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
+            <Link to="/carrito">
+              <Button variant="ghost" size="icon" className="relative">
+                <ShoppingCart className="h-5 w-5" />
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu */}
