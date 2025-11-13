@@ -4,6 +4,8 @@
 
 **URL**: https://lovable.dev/projects/8e457c87-3ef9-42a0-bf0c-0913628fa725
 
+**LINK**: https://asichav-roots-web.lovable.app
+
 ## How can I edit this code?
 
 There are several ways of editing your application.

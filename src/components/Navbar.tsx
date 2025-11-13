@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-primary text-primary-foreground shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3 rounded">
             <img src={logo} alt="ASICHAV Logo" className="h-12 w-12 object-contain" />
             <span className="text-2xl font-bold">ASICHAV</span>
           </Link>
