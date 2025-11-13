@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-3 rounded">
-            <img src={logo} alt="ASICHAV Logo" className="h-12 w-12 object-contain" />
+            <img src={logo} alt="ASICHAV Logo" className="h-12 w-12 object-contain rounded-full" />
             <span className="text-2xl font-bold">ASICHAV</span>
           </Link>
 
