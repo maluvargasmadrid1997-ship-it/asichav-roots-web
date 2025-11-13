@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Menu, ShoppingCart } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -7,6 +7,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import logo from "@/assets/asichav-logo.png";
+import { CartDrawer } from "@/components/CartDrawer";
 
 const Navbar = () => {
   const menuItems = [
@@ -43,11 +44,7 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Link to="/carrito">
-              <Button variant="ghost" size="icon" className="relative">
-                <ShoppingCart className="h-5 w-5" />
-              </Button>
-            </Link>
+            <CartDrawer />
           </div>
 
           {/* Mobile Menu */}
